@@ -1,6 +1,9 @@
-# Moondust Theme - Color Reference
+# Moondust Inspired Niri + Waybar Theme
 
-My config files for a minimal, blue-gray color theme for Niri, Waybar, Kitty, and so on, based on the [Moondust theme](https://github.com/vanyauhalin/moondusttheme/) by Ivan Uhalin.
+My config files for a minimal, blue-gray color theme for [Niri](https://github.com/YaLTeR/niri), Waybar, Kitty, and so on, based on the amazing [Moondust theme](https://github.com/vanyauhalin/moondusttheme/) by Ivan Uhalin.
+
+> [!IMPORTANT] 
+> I'm new to Niri, and configuration like this in general. This setup is very much a work-in-progress and draws heavily from far more talented folks in the [Niri Setup Showcase](https://github.com/YaLTeR/niri/discussions/325). Contributions, suggestions, and PRs are welcome and encouraged. 
 
 ## Preview
 
@@ -14,6 +17,20 @@ My config files for a minimal, blue-gray color theme for Niri, Waybar, Kitty, an
     <td><img src="assets/screenshot4.png" alt="Moondust screenshot 4" width="320"></td>
   </tr>
 </table>
+
+## Configs
+
+This repository includes my Moondust-styled configurations for:
+
+- Fastfetch (system info display)
+- Fish (shell + Fisher theme)
+- Fuzzel (application launcher)
+- Kitty (terminal emulator)
+- Mako (notification daemon)
+- Niri (Wayland tiling compositor)
+- Starship (prompt)
+- Sublime Text (editor color theme alignments)
+- Waybar (status bar)
 
 ## Color Palette
 
@@ -86,77 +103,6 @@ These colors are used for specific UI purposes but are not part of the canonical
 |------|-----|---------|-------|
 | **Warning** | `#E8B87E` | ![#E8B87E](https://img.shields.io/badge/E8B87E-E8B87E?style=flat-square) | Warning states (Mako only) |
 | **Critical** | `#E67C7C` | ![#E67C7C](https://img.shields.io/badge/E67C7C-E67C7C?style=flat-square) | Critical/error states, power button |
-
-## Syntax Highlighting Roles
-
-### Comment
-- **Color**: Gray 3 (`#637179`) ![#637179](https://img.shields.io/badge/637179-637179?style=flat-square)
-- **Usage**: Comments, documentation
-
-### Plain Text (Keywords, Operators, Punctuation)
-- **Primary**: Gray 2 (`#89949A`) ![#89949A](https://img.shields.io/badge/89949A-89949A?style=flat-square)
-- **Secondary**: Gray 1 (`#B1B6B9`) ![#B1B6B9](https://img.shields.io/badge/B1B6B9-B1B6B9?style=flat-square)
-- **Usage**: Keywords, control flow, operators, punctuation, variables, functions, types
-
-### Strings
-- **Primary**: Slate 1 (`#8FAFCC`) ![#8FAFCC](https://img.shields.io/badge/8FAFCC-8FAFCC?style=flat-square)
-- **Punctuation**: Slate 2 (`#6885A1`) ![#6885A1](https://img.shields.io/badge/6885A1-6885A1?style=flat-square)
-- **Usage**: String literals, template strings, regex
-
-## Application Examples
-
-### Terminal (Kitty)
-```ini
-background #161A1D
-foreground #B1B6B9
-cursor #637179
-selection_background #2C75C3
-selection_foreground #D2D4D5
-```
-
-### Application Launcher (Fuzzel)
-```ini
-background=161A1Dff
-text=B1B6B9ff
-selection=2C75C3ff
-border=343F46ff
-match=4D8FDBff
-```
-
-### Notifications (Mako)
-```ini
-background-color=#161A1DF0
-text-color=#D2D4D5
-border-color=#4D8FDB
-```
-
-### Status Bar (Waybar)
-```css
-@define-color base-bg #161A1D;
-@define-color text-primary #D2D4D5;
-@define-color accent-blue #2C75C3;
-@define-color border #343F46;
-```
-
-### Shell Prompt (Starship)
-```toml
-[palettes.moondust_dark]
-gray_3 = "#637179"
-blue_2 = "#2C75C3"
-blue_0 = "#4D8FDB"
-slate_1 = "#8FAFCC"
-```
-
-### System Info (Fastfetch)
-```json
-{
-  "display": {
-    "color": {
-      "separator": "#343F46"
-    }
-  }
-}
-```
 
 ## Quick Reference
 
