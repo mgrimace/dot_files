@@ -4,10 +4,16 @@ A minimal, blue-gray color theme for Niri, Waybar, Kitty, and so on, based on th
 
 ## Preview
 
-| | |
-|---|---|
-| ![Preview 1](assets/screenshot1.png) | ![Preview 2](assets/screenshot2.png) |
-| ![Preview 3](assets/screenshot3.png) | ![Preview 4](assets/screenshot4.png) |
+<table>
+  <tr>
+    <td><img src="assets/screenshot1.png" alt="Moondust screenshot 1" width="320"></td>
+    <td><img src="assets/screenshot2.png" alt="Moondust screenshot 2" width="320"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshot3.png" alt="Moondust screenshot 3" width="320"></td>
+    <td><img src="assets/screenshot4.png" alt="Moondust screenshot 4" width="320"></td>
+  </tr>
+</table>
 
 ## Color Palette
 
