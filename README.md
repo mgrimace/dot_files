@@ -1,6 +1,6 @@
 # Moondust Theme - Color Reference
 
-A minimal, blue-gray color theme for Niri, Waybar, Kitty, and so on, based on the [Moondust theme](https://github.com/vanyauhalin/moondusttheme/) by Ivan Uhalin.
+My config files for a minimal, blue-gray color theme for Niri, Waybar, Kitty, and so on, based on the [Moondust theme](https://github.com/vanyauhalin/moondusttheme/) by Ivan Uhalin.
 
 ## Preview
 
