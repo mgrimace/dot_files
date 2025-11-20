@@ -14,7 +14,7 @@ My config files for a minimal, blue-gray color theme for [Niri](https://github.c
   </tr>
   <tr>
     <td><img src="assets/screenshot3.png" alt="Moondust screenshot 3" width="320"></td>
-    <td><img src="assets/screenshot4.png" alt="Moondust screenshot 4" width="320"></td>
+    <td><img src="assets/screenshot_split.png" alt="Moondust screenshot 4" width="320"></td>
   </tr>
 </table>
 
