@@ -11,7 +11,7 @@ My config files for a minimal, blue-gray color theme for [Niri](https://github.c
   <tr>
     <td><img src="assets/screenshot_zen.png" alt="Moondust screenshot 1" width="320"></td>
     <td><img src="assets/screenshot_split.png" alt="Moondust screenshot 2" width="320"></td>
-    <td><img src="assets/screenshot_pop.png" alt="Moondust screenshot 3" width="320"></td>
+    <td><img src="assets/screenshot_fuzzel.png" alt="Moondust screenshot 3" width="320"></td>
   </tr>
 </table>
 
