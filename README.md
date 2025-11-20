@@ -23,10 +23,10 @@ This repository includes my Moondust-styled configurations for:
 - Fish (shell + Fisher theme)
 - Fuzzel (application launcher)
 - Kitty (terminal emulator)
-- Mako (notification daemon)
+- Mako (notifications)
 - Niri (Wayland tiling compositor)
 - Starship (prompt)
-- Sublime Text (editor color theme alignments)
+- Sublime Text (editor, themed)
 - Waybar (status bar)
 
 ## Color Palette
