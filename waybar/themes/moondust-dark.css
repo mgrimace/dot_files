@@ -9,7 +9,7 @@
 @define-color elevated-bg #22272B;    /* gray[8] - elevated elements */
 @define-color border #343F46;         /* gray[5] - borders and dividers */
 @define-color text-primary #D2D4D5;   /* gray[0] - primary text */
-@define-color text-secocndary #B1B6B9; /* gray[1] - secondary text */
+@define-color text-secondary #B1B6B9; /* gray[1] - secondary text */
 @define-color text-muted #637179;     /* gray[2] - muted text */
 @define-color accent-blue #2C75C3;    /* blue[2] - primary accent (selection) */
 @define-color accent-blue-hover #4D8FDB; /* blue[0] - hover state (links) */
