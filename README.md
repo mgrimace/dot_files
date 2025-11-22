@@ -2,6 +2,9 @@
 
 My config files for a minimal, blue-gray color theme for [Niri](https://github.com/YaLTeR/niri), Waybar, Kitty, and so on, based on the amazing [Moondust theme](https://github.com/vanyauhalin/moondusttheme/) by Ivan Uhalin.
 
+> [!NOTE]
+> The Waybar statusbar is now rounded and translucent (see screenshot 1). If you prefer the 'flat' style, swap with the flat-config.jsonc and flat-style.css.
+
 > [!IMPORTANT] 
 > I'm new to Niri, and configuration like this in general. This setup is very much a work-in-progress and draws heavily from far more talented folks in the [Niri Setup Showcase](https://github.com/YaLTeR/niri/discussions/325). Contributions, suggestions, and PRs are welcome and encouraged. 
 
@@ -9,7 +12,7 @@ My config files for a minimal, blue-gray color theme for [Niri](https://github.c
 
 <table>
   <tr>
-    <td><img src="assets/screenshot_zen.png" alt="Moondust screenshot 1" width="320"></td>
+    <td><img src="assets/screenshot_zen_rounded.png" alt="Moondust screenshot 1" width="320"></td>
     <td><img src="assets/screenshot_split.png" alt="Moondust screenshot 2" width="320"></td>
     <td><img src="assets/screenshot_fuzzel.png" alt="Moondust screenshot 3" width="320"></td>
   </tr>

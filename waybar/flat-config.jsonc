@@ -1,12 +1,12 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
     "spacing": 0,
     "reload_style_on_change": true,
-
+    
     // Left modules: clock/date
     "modules-left": [
         "clock"
@@ -153,7 +153,7 @@
     },
 
     "custom/tray": {
-        "format": "",
+        "format": " ",
         "tooltip": "true",
         "tooltip-format": "Expand tray",
         "swap-icon-label": true

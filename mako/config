@@ -1,5 +1,5 @@
 # =============================================================================
-# Mako Notification Daemon - Moondust Dark Theme (Flat Edition)
+# Mako Notification Daemon - Moondust Dark Theme
 # =============================================================================
 font=JetBrainsMono Nerd Font 11
 layer=overlay
@@ -8,12 +8,14 @@ default-timeout=5000
 ignore-timeout=0
 group-by=app-name
 sort=-time
+history=1
+max-history=50
 
 # =============================================================================
 # Moondust Base Colors
 # =============================================================================
 # base-bg:        #161A1D
-# surface-bg:     #1E2225
+# surface-bg:     #1E2225a
 # elevated-bg:    #22272B
 # border:         #343F46
 # text-primary:   #D2D4D5
@@ -56,3 +58,4 @@ background-color=#22272BF0
 border-color=#E67C7C
 text-color=#D2D4D5
 default-timeout=0
+ignore-timeout=1
