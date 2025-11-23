@@ -61,7 +61,7 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "󰛊",
+            "activated": "󰅶",
             "deactivated": "󰾪"
         },
         "tooltip-format-activated": "Idle Inhibitor Activated",
