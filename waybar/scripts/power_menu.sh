@@ -19,11 +19,11 @@ echo $$ > "$PIDFILE"
 
 # Launch menu and get selection
 SELECTION="$(
-    printf "󰤄 Suspend\n󰍃 Logout\n Reboot\n󰐥 Shutdown" \
-    | fuzzel --dmenu -a top-right -l 4 -w 18 -p "Select an option: "
+    printf " Lock\n󰤄 Suspend\n󰍃 Logout\n Reboot\n󰐥 Shutdown" \
+    | fuzzel --dmenu -a top-right -l 5 -w 18 -p "Select an option: "
 )"
 
-# Clean up PID file after fuzzel closes (user made selection or dismissed)
+# Clean up PID file after fuzzel closes
 rm -f "$PIDFILE"
 
 # Confirmation function
@@ -39,6 +39,10 @@ confirm_action() {
 
 # Handle selection
 case $SELECTION in
+    *" Lock"*)
+        swaylock
+        ;;
+
     *"󰤄 Suspend"*)
         if confirm_action "Suspend"; then
             systemctl suspend
