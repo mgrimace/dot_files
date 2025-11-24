@@ -14,6 +14,6 @@
 @define-color accent-blue #2C75C3;    /* blue[2] - primary accent (selection) */
 @define-color accent-blue-hover #4D8FDB; /* blue[0] - hover state (links) */
 @define-color accent-slate #B2D0EB;   /* slate[0] - secondary accent */
-@define-color warning #2769B4;        /* blue[3] - warnings (canonical) */
+@define-color warning #E8B87E;        /* blue[3] - warnings (canonical) */
 @define-color critical #E67C7C;       /* warm red for critical (non-canonical) */
 @define-color transparent transparent; /* for hover backgrounds */

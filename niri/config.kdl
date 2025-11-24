@@ -38,15 +38,16 @@ input {
         natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
-        // scroll-method "two-finger"
+        accel-profile "adaptive"
+        scroll-method "two-finger"
         // disabled-on-external-mouse
     }
 
     mouse {
         // off
-        // natural-scroll
+        natural-scroll
         // accel-speed 0.2
-        // accel-profile "flat"
+        accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -108,7 +109,7 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -201,6 +202,9 @@ spawn-at-startup "niriswitcher"
 
 // Add mako to startup
 spawn-at-startup "mako"
+
+// Add waypaper wallpaper at startup
+spawn-at-startup "waypaper" "--restore"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -329,6 +333,24 @@ binds {
     // Updated to target the correct backlight device explicitly.
     XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--device=intel_backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--device=intel_backlight" "set" "10%-"; }
+
+    // ========== Additional Function Keys ==========
+    // F7 - Display/Monitor settings
+    XF86Display { spawn "wdisplays"; }
+    
+    // F9 - Settings
+    XF86Tools { spawn "waypaper"; }
+    
+    // F10 - Bluetooth manager
+    XF86Bluetooth { spawn "blueman-manager"; }
+    
+    // F11 - Keyboard backlight (cycles through 0 -> 1 -> 2 -> 0)
+    XF86Keyboard {
+        spawn-sh "cur=$(brightnessctl --device=tpacpi::kbd_backlight get); max=$(brightnessctl --device=tpacpi::kbd_backlight max); next=$(( (cur + 1) % (max + 1) )); brightnessctl --device=tpacpi::kbd_backlight set $next"
+    }
+    
+    // F12 - Favourites
+    // XF86Favorites { spawn "YOUR_CHOICE_HERE"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
