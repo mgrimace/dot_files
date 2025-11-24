@@ -19,6 +19,7 @@
 
     // Right modules: system info + utilities
     "modules-right": [
+        "custom/updates",
         "custom/vpn",
         "network",
         "backlight",
@@ -89,6 +90,15 @@
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
         "on-click": "kitty -e nmtui"
+    },
+
+    "custom/updates": {
+        "format": "  {}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/count-updates.sh",
+        "restart-interval": 3600,  // checks hourly, change if needed
+        "on-click": "kitty --title Updater -e ~/.config/waybar/scripts/install-updates.sh"
     },
 
     "custom/vpn": {
