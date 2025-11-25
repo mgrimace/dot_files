@@ -40,7 +40,7 @@ confirm_action() {
 # Handle selection
 case $SELECTION in
     *" Lock"*)
-        swaylock
+        hyprlock
         ;;
 
     *"󰤄 Suspend"*)
