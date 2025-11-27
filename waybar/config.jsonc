@@ -93,11 +93,11 @@
     },
 
     "custom/updates": {
-        "format": "  {}",
+        "format": "{}",
         "escape": true,
         "return-type": "json",
         "exec": "~/.config/waybar/scripts/count-updates.sh",
-        "restart-interval": 3600,  // checks hourly, change if needed
+        "restart-interval": 3600,
         "on-click": "kitty --title Updater -e ~/.config/waybar/scripts/install-updates.sh"
     },
 
